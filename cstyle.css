@@ -1,0 +1,70 @@
+.sidebar {
+    background-color: #9053b4;
+    color: rgb(27, 27, 27);
+    width: 350px;
+    height: 100vh;
+    float: right;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.sidebar h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titles {
+    color: #0f1243;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    text-align: center;
+    font-size: 50px;
+    padding-right: 10px;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #4c0202;
+}
+
+.sidebar ul li a {
+    color: #7500384d;
+    text-decoration: none;
+}
+
+.header {
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    color: #680202;
+    font-weight: bold;
+}
+
+.content {
+    padding: 10px;
+    padding-bottom: 50px;
+    border-top: 1px solid #a00000;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.insert {
+    color: #10eab0;
+    text-decoration: none;
+}
+
+.editedel {
+    color: #10eab0;
+    text-decoration: none;
+}
+
+.booktable {
+    font-size: 150%;
+}
