@@ -1,53 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: bottom;
-            padding: 10px 0;
-        }
-        .booktable {
-            width: 60%;
-            border-collapse: collapse;
-        }
-
-        .booktable th, .booktable td {
-            border: 1px solid black;
-            padding: 8px;
-        }
-
-        .booktable th {
-            background-color: #a30b87;
-            color: #fff;
-        }
-
-        .insert, .editedel {
-            color: #10ead4;
-            text-decoration: none;
-        }
-
-        .editedel:first-child {
-            margin-right: 5px;
-        }
-    </style>
+ 
 </head>
 <body>
 
-    <table class="booktable">
+    <table class="text-[#30374A] text-[18px] w-[900px]">
         <thead>
-            <tr>
-                <th>شناسه</th>
-                <th>نام کتاب</th>
-                <th>نویسنده</th>
-                <th>قیمت</th>
-                <th>موضوع</th>
-                <th><a class="insert" href="insert-book.php">افزودن کتاب</a></th>
+            <tr class="border-b border-[#8B5CFB]">
+                <th class="py-3 text-right font-light w-1/4">شناسه</th>
+                <th class="py-3 text-right font-light w-1/4">نام کتاب</th>
+                <th class="py-3 text-right font-light w-1/4">نویسنده</th>
+                <th class="py-3 text-right font-light w-1/4">قیمت</th>
+                <th class="py-3 text-right font-light w-1/4">موضوع</th>
+                <th class="py-3 text-right font-light w-1/4"><a class="insert" href="insert-book.php">افزودن کتاب</a></th>
             </tr>
         </thead>
         <tbody>
@@ -58,14 +24,18 @@
             $result = mysqli_query($link, "SELECT * FROM books");
             while ($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <tr>
-                    <td><?= $row['id'] ?></td>
-                    <td><?= $row['name'] ?></td>
-                    <td><?= $row['writer'] ?></td>
-                    <td><?= $row['price'] ?></td>
-                    <td><?= $row['subject'] ?></td>
-                    <td>
-                        <a class="editedel" href="delete-book.php?id=<?= $row['id'] ?>">حذف</a> | <a class="editedel" href="edite-books.php?id=<?= $row['id'] ?>">ویرایش</a>
+                <tr  class="border-b border-[#D3D8E4]">
+                    <td class="py-4 w-1/4 p-4"><?= $row['id'] ?></td>
+                    <td class="py-4 w-1/4"><?= $row['name'] ?></td>
+                    <td class="py-4 w-1/4"><?= $row['writer'] ?></td>
+                    <td class="py-4 w-1/4"><?= $row['price'] ?></td>
+                    <td class="py-4 w-1/4"><?= $row['subject'] ?></td>
+                    <td class="py-4 w-1/4">
+                    <div class="flex items-center gap-2 justify-end">
+    <a class="text-[#8B5CFB]" href="delete-book.php?id=<?= $row['id'] ?>"> <i class="fa-solid fa-trash p-1 rounded-[8px] shadow bg-[white]"></i>  </a>
+    <a class="text-[#8B5CFB]" href="edite-books.php?id=<?= $row['id'] ?>"> <i class="fa-solid fa-pen-to-square p-1 rounded-[8px] shadow bg-[white]"></i></a>
+    </div>
+                        <!-- <a class="editedel" href="delete-book.php?id=<?= $row['id'] ?>">حذف</a> | <a class="editedel" href="edite-books.php?id=<?= $row['id'] ?>">ویرایش</a> -->
                     </td>
                 </tr>
             <?php } ?>
@@ -77,7 +47,7 @@
 
         <div class="col-sm-3">
 
-            <input type="text" name="srch" value="" class="form-control">
+            <input type="text" name="srch" value="" class="form-control bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none " >
 
         </div>
         
@@ -85,12 +55,12 @@
 
         <div class="col-sm-2">
 
-            <input type="text" name="price1" value="" class="form-control" />
+            <input type="text" name="price1" value="" class="form-control bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none " />
 
         </div>
 
         <div class="col-sm-1">قیمت تا</div>
-        <input type="text" name="price2" value="" class="form-control" />
+        <input type="text" name="price2" value="" class="form-control bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none " />
 
         <div class="col-sm-2">
 
@@ -118,7 +88,7 @@
 
         <div class="col-sm-2">
 
-            <input type="submit" value="جستجو" class="btn btn-info" />
+            <input type="submit" value="جستجو" class="btn btn-info bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none " />
             
         </div>
     </div>
