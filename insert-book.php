@@ -39,9 +39,9 @@ else {
 </tbody>
 <form method="post">
     <tr style="text-align: center;">
-    <td><input style="font-size: 20px;" name="name" type="text"></td>
-    <td><input style="font-size: 20px;" name="writer" type="text"></td>
-    <td><input style="font-size: 20px;" name="price" type="number"></td>
+    <td><input class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" style="font-size: 20px;" name="name" type="text"></td>
+    <td><input class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" style="font-size: 20px;" name="writer" type="text"></td>
+    <td><input class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" style="font-size: 20px;" name="price" type="number"></td>
     <td><select style="font-size: 20px;" name="subject">
 <?php
     $subjects= "SELECT sname from subjects";
@@ -57,7 +57,7 @@ while($row= mysqli_fetch_assoc($result)){
 <table>
     <tr>
     <td>
-    <input style="font-size: 20px; width: 140px;height: 50px;background-color:#32ffa6;" name="submit" type="submit" value="ثبت">
+    <input style="font-size: 20px; width: 100px;height: 50px;background-color:#CECFFF;" class="rounded-[8px]" name="submit" type="submit" value="ثبت">
     </td>
     </tr>
     </table>
