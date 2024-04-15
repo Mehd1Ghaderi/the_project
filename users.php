@@ -2,10 +2,16 @@
 <table  class="text-[#30374A] text-[18px]" width="60%" border="1">
     <tbody>
     <tr class="border-b border-[#8B5CFB]">
-              <th class="py-3 text-right font-light w-1/4">شناسه</th>
+              <!-- <th class="py-3 text-right font-light w-1/4">شناسه</th>
               <th class="py-3 text-right font-light w-1/4">نام</th>
               <th class="py-3 text-right font-light w-1/4 sm:pr-3">رنگ اصلی</th>
-              <th class="py-3 text-right font-light w-1/4"></th>
+              <th class="py-3 text-right font-light w-1/4"></th> -->
+              <th class="py-3 text-right font-light w-1/4">شناسه</th>
+    <th class="py-3 text-right font-light w-1/4">نام کاربر</th>
+    <th class="py-3 text-right font-light w-1/4">رمز عبور</th>
+    <th class="py-3 text-right font-light w-1/4">سن</th>
+    <th class="py-3 text-right font-light w-1/4">نقش</th>
+    <th class="py-3 text-right font-light w-1/4"><a class="insert" href="insert-user.php">افزودن کاربر</a></th>
             </tr>
     </tr> 
 <?php

@@ -27,7 +27,7 @@ else {
 </tbody>
 <form method="post">
     <tr style="text-align: center;">
-    <td><input style="font-size: 20px;" name="sname" type="text"></td>
+    <td><input style="font-size: 20px;"  class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" name="sname" type="text"></td>
     </tr>
 
 </table>

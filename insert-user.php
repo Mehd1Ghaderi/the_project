@@ -38,9 +38,9 @@ else {
 </tbody>
 <form method="post">
     <tr style="text-align: center;">
-    <td><input style="font-size: 20px;" name="name" type="text"></td>
-    <td><input style="font-size: 20px;" name="password" type="text"></td>
-    <td><input style="font-size: 20px;" name="age" type="number"></td>
+    <td><input style="font-size: 20px;"  class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" name="name" type="text"></td>
+    <td><input style="font-size: 20px;"  class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" name="password" type="text"></td>
+    <td><input style="font-size: 20px;"  class="bg-[#F1F2FF] py-1 px-2 rounded-[8px] border border-[#CECFFF] outline-none" name="age" type="number"></td>
     <td><select style="font-size: 20px;" name="role">
         <option value="---">---</option>
         <option value="1">مدیر</option>
